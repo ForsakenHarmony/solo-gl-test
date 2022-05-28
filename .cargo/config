@@ -1,0 +1,10 @@
+[build]
+target = "armv7-unknown-linux-gnueabihf"
+
+[target.armv7-unknown-linux-musleabihf]
+linker = "armv7l-unknown-linux-gnueabihf-ld"
+#ar = "arm-linux-gnueabihf-ar"
+
+rustflags = ["-C", "prefer-dynamic"]
+
+#rustc-link-search = ["/usr/arm-linux-gnueabihf/lib", "./sysroot/usr/lib"]
